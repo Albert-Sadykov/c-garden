@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <script src="js/menu.js"></script>
+    
+    <title>C-GARDEN</title>
+</head>
+<body>
+    <div class="window" id="win">
+        <div class="window__before">
+            <div class="window__title">
+                Введите Ваш номер телефона
+                и мы Вам перезвоним в течении 15 минут
+            </div>
+
+            <form action="" class="window__form" method="get">
+                <input type="number" name="" id="" class="form__number" placeholder="+7 --- --- -- --">
+                <input type="button" onclick="winClick()" class="form__btn" value="Отправить">
+            </form>
+            <div class="window__acsess">
+                <input type="checkbox" name="" id="">
+                <span>Согласен на обработку персональных данных</span>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="main">
+            <div class="main__info container">
+                <div class="mobile__logo"></div>
+                <div class="main__info-left">Московская область, Чеховский, Подольский, Домодедовский, Одинцовский р-ны.  </div>
+                <div class="main__info-right">
+                    <a class="info__link" href="https://t.me/+79264622999" id="telegram"></a>
+                    <a class="info__link" href="https://wa.me/79264622999" id="whatsup"></a>
+                    <span class="info__number" id="number">+7 926 462 29 99</span>
+                    <a class="phone-icon" href="#" onclick="phoneClick()"></a>
+                </div>
+            </div>
+            <header class="main__header container" id="header">
+                <a href="#" class="menu-btn" onclick="menuClick()"></a>
+                <div class="header__logo"></div>
+                <nav class="header__list">
+                    <ul>
+                        <li class="header__list-item"><a href="#services" onclick="menuClick()">Зимние услуги</a></li>
+                        <li class="header__list-item"><a href="#sum-services" onclick="menuClick()">Летние услуги</a></li>
+                        <li class="header__list-item"><a href="#examples" onclick="menuClick()">Наши работы</a></li>
+                        <li class="header__list-item"><a href="#comment" onclick="menuClick()">Отзывы</a></li>
+                        <li class="header__list-item"><a href="#footer" onclick="menuClick()">Контакты</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="main__landing container">
+                <div class="main__landing-left">
+                    <div class="landing__title">
+                        Профессиональная уборка 
+                        загородных территорий от
+                        травы, листвы и снега
+                    </div>
+                    <div class="landing__list">
+                        <div class="landing__list-item"><img src="images/galk.jpg" alt="">Выезд в день обращения</div>
+                        <div class="landing__list-item"><img src="images/galk.jpg" alt="">Расчет смоимости работ по фото</div>
+                        <div class="landing__list-item"><img src="images/galk.jpg" alt="">Наличный и безналичный расчет</div>
+                        <div class="landing__list-item"><img src="images/galk.jpg" alt="">Скидки постоянным клиентам</div>
+                    </div>
+                    <button onclick="winClick()">Заказать</button>
+                </div>
+                <div class="main__landing-right"></div>
+                
+            </div>
+            <hr class="main__hr">
+        </div>
+        <div class="services container" >
+            <div class="services__winter">
+                <div class="services__title" id="services">Зимние услуги</div>
+                <div class="services__gallery">
+                    <div class="services__gallery-item">
+                        <div class="item-img"></div>
+                        <div class="item-description">
+                            <div class="item-description__title">
+                                Уборка снега
+                            </div>
+                            <div class="item-description__price">от 2000</div>
+                        </div>
+                    </div>
+                    <div class="services__gallery-item">
+                        <div class="item-img" id="two"></div>
+                        <div class="item-description">
+                            <div class="item-description__title">
+                                Чистка крыш
+                            </div>
+                            <div class="item-description__price">от 2000</div>
+                        </div>
+                    </div>
+                    <div class="services__gallery-item">
+                        <div class="item-img" id="three"></div>
+                        <div class="item-description">
+                            <div class="item-description__title">
+                                Вывоз снега
+                            </div>
+                            <div class="item-description__price">от 10000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services__summer">
+                <div class="services__title" id="sum-services">Летние услуги</div>
+                <div class="services__gallery">
+                    <div class="services__gallery-item">
+                        <div class="item-img" id="four"></div>
+                        <div class="item-description">
+                            <div class="item-description__title">
+                                Вывоз мусора
+                            </div>
+                            <div class="item-description__price">от 2000</div>
+                        </div>
+                    </div>
+                    <div class="services__gallery-item">
+                        <div class="item-img" id="five"></div>
+                        <div class="item-description">
+                            <div class="item-description__title">
+                                Покос травы
+                            </div>
+                            <div class="item-description__price">от 2000</div>
+                        </div>
+                    </div>
+                    <div class="services__gallery-item">
+                        <div class="item-img" id="six"></div>
+                        <div class="item-description">
+                            <div class="item-description__title">
+                                Спил деревьев и кустов
+                            </div>
+                            <div class="item-description__price">от 10000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sale">
+            <div class="container">
+                <div class="sale__container">
+                    <div class="sale__left"> 
+                        <div class="sale__title landing__title">
+                            Акция в Чеховском районе! 
+                        </div>
+                        <div class="sale__service landing__title">
+                            Чистка снега (крыльцо+дорожка+машиноместо) 
+                        </div>
+                        <div class="sale__price landing__title  ">
+                            3000р
+                        </div>
+                        <div class="sale__disc">Пенсионерам и постоянным клиентам предусмотренны скидки 
+                            от 5 до 20% </div>
+                        <button class="sale-btn" onclick="winClick()">Заказать</button>
+                    </div>
+                    <div class="sale__img"></div>
+                </div>
+                <hr>
+            </div>
+            
+        </div>
+        <div class="comment" id="comment">
+            <div class="container">
+                <div class="comment__title">Отзывы клиентов</div>
+                <div class="comment__grid desctop" id="">
+                    <img src="images/com-1.png" alt="" class="comment__grid-item">
+                    <img src="images/com-2.png" alt="" class="comment__grid-item">
+                    <img src="images/com-3.png" alt="" class="comment__grid-item">
+                    <img src="images/com-4.png" alt="" class="comment__grid-item">
+                    <img src="images/com-5.png" alt="" class="comment__grid-item">
+                    <img src="images/com-6.png" alt="" class="comment__grid-item">
+                </div>
+                <div class=" mobile owl-carousel owl-theme">
+                    <img src="images/com-1.png" alt="" class="comment__grid-item">
+                    <img src="images/com-2.png" alt="" class="comment__grid-item">
+                    <img src="images/com-3.png" alt="" class="comment__grid-item">
+                    <img src="images/com-4.png" alt="" class="comment__grid-item">
+                    <img src="images/com-5.png" alt="" class="comment__grid-item">
+                    <img src="images/com-6.png" alt="" class="comment__grid-item">
+                </div>
+            </div>
+        </div>
+        <div class="marketing">
+            <div class="container">
+                <div class="marketin__text">
+                    Наша компания уже несколько лет оказывает профессиональные услуги по 
+                    уходу, уборке и благоустройству загорных участков.
+                    <br>        
+                    У нас работают высококвалифицированные специалисты, готовые оперативно выехать на заказ.
+                    В работе мы используем различное оборудование и инструмент. 
+                    <br>
+                    Газонокосили, безногосилки, электрические триммеры, мотоблоки с различным навесным оборудованием.
+                    <br>
+                    Наши специалисты приедут на заказ на автомобиле Lada Largus и при необходимости вывезут
+                    строительый мусор, траву, листву и прочее.
+                </div>
+                <div class="mar__images">
+                    <img src="images/mar-2.png" alt="" class="left">
+                    <img src="images/mar-1.png" alt="" class="right">
+                </div>
+            </div>
+        </div>
+
+        <div class="examples container" id="examples">
+            <div class="examples__title">Примеры работ</div>
+            <div class="owl-carousel owl-theme">
+                <div class="slider-item">
+                    <img src="images/ex-1.jpg" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="images/ex-2.jpg" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="images/ex-3.jpg" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="images/ex-4.jpg" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="images/ex-5.jpg" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="images/ex-6.jpg" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="images/ex-7.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="map container">
+            <div class="services__title">Контакты</div>
+            <!-- <img src="images/map.jpg" alt="" class="map__image"> -->
+            <iframe class="map-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A2c6a908f347d1743837aaffd205d622e408d458daf76ff1e2d22e5c83f485be4&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+            <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa8a245ad1556af13c0335689c17c595234e97fb8fe9f596e3bef75c048a3cd5d&amp;width=1172&amp;height=616&amp;lang=ru_RU&amp;scroll=true"></script> -->
+        </div>
+        <footer class="footer" id="footer">
+                <div class="footer__contant">
+                <div class="footer__title">Остались вопросы?</div>
+                <div class="footer__text">Звоните!</div>
+                <div class="footer__number">+7 926 462 29 99</div>
+                <button class="footer__btn" onclick="winClick()">Перезвоните мне</button>
+                <div class="footer__text">Или задайте вопрос в мессенджер</div>
+                <div class="footer__text-green">Отвечаем в течении 5 минут</div>
+                <div class="footer__links">
+                    <div class="footer__links-item">
+                        <div class="item-icon" id="wp"></div>
+                        <a href="https://wa.me/79264622999">WhatsApp</a> </div>
+                    <div class="footer__links-item">
+                        <div class="item-icon"></div>
+                        <a href="https://t.me/+79264622999">Telegram</a> </div>
+                </div>
+            </div>
+            <div class="footer__contact container">
+                <hr>
+                <div class="footer__contact-flex">
+                    <div class="contact-left">
+                        <div class="contact-mail">info@c-garden.ru</div>
+                        <div class="contact-number">+7 926 462 29 99</div>
+                        <div class="contact-links">
+                            <a href="https://t.me/+79264622999" class="contact-tg"></a>
+                            <a href="https://wa.me/79264622999" class="contact-wp"></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <nav class="header__list">
+                            <ul>
+                                <li class="header__list-item"><a href="#services">Зимние услуги</a></li>
+                                <li class="header__list-item"><a href="#sum-services">Летние услуги</a></li>
+                                <li class="header__list-item"><a href="#examples">Наши работы</a></li>
+                                <li class="header__list-item"><a href="#comment">Отзывы</a></li>
+                                <li class="header__list-item"><a href="#footer">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
